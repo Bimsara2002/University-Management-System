@@ -12,9 +12,13 @@
                 + Add Student
             </a>
 
-            <a href="{{ route('students.export') }}"
-            class="rounded-2xl border border-slate-300 bg-white px-7 py-4 text-base font-bold text-slate-700 shadow-sm transition hover:bg-slate-100">
-                ⬇ Export CSV
+            <a href="{{ route('students.export', [
+                'keyword' => $keyword,
+                'department' => $department,
+                'status' => $status
+            ]) }}"
+            class="bg-green-600 text-white px-7 py-4 text-base font-bold rounded-2xl shadow-lg transition hover:bg-green-700">
+                Export CSV
             </a>
         </div>
     </div>
