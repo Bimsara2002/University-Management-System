@@ -2,138 +2,26 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use App\Models\Instructor;
+use Illuminate\Database\Seeder;
 
 class InstructorSeeder extends Seeder
 {
     public function run(): void
     {
         $instructors = [
-            [
-                'name' => 'Dr. Nimal Perera',
-                'email' => 'nimal.perera@gmail.com',
-                'phone' => '0771111111',
-                'department' => 'Computer Science',
-                'designation' => 'Senior Lecturer',
-                'address' => 'Colombo',
-            ],
-            [
-                'name' => 'Ms. Sanduni Silva',
-                'email' => 'sanduni.silva@gmail.com',
-                'phone' => '0772222222',
-                'department' => 'Business',
-                'designation' => 'Lecturer',
-                'address' => 'Gampaha',
-            ],
-            [
-                'name' => 'Mr. Kasun Fernando',
-                'email' => 'kasun.fernando@gmail.com',
-                'phone' => '0773333333',
-                'department' => 'IT',
-                'designation' => 'Assistant Lecturer',
-                'address' => 'Negombo',
-            ],
-            [
-                'name' => 'Dr. Chamila Jayasinghe',
-                'email' => 'chamila.j@gmail.com',
-                'phone' => '0774444444',
-                'department' => 'Engineering',
-                'designation' => 'Senior Lecturer',
-                'address' => 'Kandy',
-            ],
-            [
-                'name' => 'Mrs. Piumi Senanayake',
-                'email' => 'piumi.s@gmail.com',
-                'phone' => '0775555555',
-                'department' => 'Management',
-                'designation' => 'Lecturer',
-                'address' => 'Kalutara',
-            ],
-            [
-                'name' => 'Mr. Tharindu Wickramasinghe',
-                'email' => 'tharindu.w@gmail.com',
-                'phone' => '0776666666',
-                'department' => 'Software Engineering',
-                'designation' => 'Lecturer',
-                'address' => 'Kurunegala',
-            ],
-            [
-                'name' => 'Ms. Anjali Perera',
-                'email' => 'anjali.p@gmail.com',
-                'phone' => '0777777777',
-                'department' => 'Design',
-                'designation' => 'Instructor',
-                'address' => 'Galle',
-            ],
-            [
-                'name' => 'Dr. Ravindu Abeysekara',
-                'email' => 'ravindu.a@gmail.com',
-                'phone' => '0781111111',
-                'department' => 'Computer Science',
-                'designation' => 'Senior Lecturer',
-                'address' => 'Colombo',
-            ],
-            [
-                'name' => 'Mr. Saman Kumara',
-                'email' => 'saman.k@gmail.com',
-                'phone' => '0782222222',
-                'department' => 'Engineering',
-                'designation' => 'Lecturer',
-                'address' => 'Anuradhapura',
-            ],
-            [
-                'name' => 'Ms. Dilani Fernando',
-                'email' => 'dilani.f@gmail.com',
-                'phone' => '0783333333',
-                'department' => 'IT',
-                'designation' => 'Assistant Lecturer',
-                'address' => 'Matara',
-            ],
-            [
-                'name' => 'Dr. Nuwan Silva',
-                'email' => 'nuwan.s@gmail.com',
-                'phone' => '0784444444',
-                'department' => 'Business',
-                'designation' => 'Senior Lecturer',
-                'address' => 'Ratnapura',
-            ],
-            [
-                'name' => 'Mrs. Sewmini Karunarathna',
-                'email' => 'sewmini.k@gmail.com',
-                'phone' => '0785555555',
-                'department' => 'Management',
-                'designation' => 'Lecturer',
-                'address' => 'Hambantota',
-            ],
-            [
-                'name' => 'Mr. Lakshan Madushanka',
-                'email' => 'lakshan.m@gmail.com',
-                'phone' => '0786666666',
-                'department' => 'IT',
-                'designation' => 'Instructor',
-                'address' => 'Badulla',
-            ],
-            [
-                'name' => 'Ms. Ishara De Silva',
-                'email' => 'ishara.d@gmail.com',
-                'phone' => '0787777777',
-                'department' => 'Software Engineering',
-                'designation' => 'Lecturer',
-                'address' => 'Colombo',
-            ],
-            [
-                'name' => 'Dr. Dinuka Peris',
-                'email' => 'dinuka.p@gmail.com',
-                'phone' => '0791111111',
-                'department' => 'Computer Science',
-                'designation' => 'Senior Lecturer',
-                'address' => 'Jaffna',
-            ],
+            ['name' => 'Dr. R. Silva',        'email' => 'r.silva@faculty.ac.lk',       'phone' => '0112345001', 'department' => 'Computer Science',       'designation' => 'Professor',           'address' => '10 Faculty Quarters, Colombo 07'],
+            ['name' => 'Dr. P. Fernando',     'email' => 'p.fernando@faculty.ac.lk',    'phone' => '0112345002', 'department' => 'Computer Science',       'designation' => 'Associate Professor', 'address' => '22 University Ave, Colombo 03'],
+            ['name' => 'Mr. A. Jayawardena',  'email' => 'a.jayawardena@faculty.ac.lk', 'phone' => '0112345003', 'department' => 'Computer Science',       'designation' => 'Senior Lecturer',     'address' => '5 Park Rd, Nugegoda'],
+            ['name' => 'Ms. N. Perera',       'email' => 'n.perera@faculty.ac.lk',      'phone' => '0112345004', 'department' => 'Information Technology', 'designation' => 'Lecturer',            'address' => '78 Hill St, Kandy'],
+            ['name' => 'Dr. S. Wickrama',     'email' => 's.wickrama@faculty.ac.lk',    'phone' => '0112345005', 'department' => 'Information Technology', 'designation' => 'Associate Professor', 'address' => '33 Lake Dr, Colombo 02'],
+            ['name' => 'Dr. K. Rathnayake',   'email' => 'k.rathnayake@faculty.ac.lk',  'phone' => '0112345006', 'department' => 'Software Engineering',   'designation' => 'Professor',           'address' => '9 Lotus Rd, Battaramulla'],
+            ['name' => 'Mr. L. Gunawardena',  'email' => 'l.gunawardena@faculty.ac.lk', 'phone' => '0112345007', 'department' => 'Software Engineering',   'designation' => 'Senior Lecturer',     'address' => '56 Green Path, Colombo 03'],
+            ['name' => 'Dr. T. Ekanayake',    'email' => 't.ekanayake@faculty.ac.lk',   'phone' => '0112345008', 'department' => 'Data Science',           'designation' => 'Associate Professor', 'address' => '14 Marine Dr, Colombo 01'],
         ];
 
-        foreach ($instructors as $instructor) {
-            Instructor::create($instructor);
+        foreach ($instructors as $data) {
+            Instructor::firstOrCreate(['email' => $data['email']], $data);
         }
     }
 }

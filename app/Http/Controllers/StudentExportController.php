@@ -11,7 +11,7 @@ class StudentExportController extends Controller
     {
         $query = Student::query();
 
-        // 🔍 SAME filters as Livewire
+        // SAME filters as Livewire
         $search = trim($request->keyword);
 
         $query->when($search !== '', function ($q) use ($search) {
